@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/edit_account_icon"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_track_order"
+        android:icon="@drawable/track_order_icon"
+        android:title="Track order" />
+    <item
+        android:id="@+id/nav_order_history"
+        android:icon="@drawable/purchase_order_icon"
+        android:title="Order history" />
+</menu>

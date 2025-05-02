@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".App.view.activity.Auth.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo_single" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <!-- Welcome text -->
+                <TextView
+                    android:id="@+id/txt_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/annapurna_sil"
+                    android:text="Welcome to KTOP FOODS"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <!-- Description text -->
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/annapurna_sil"
+                    android:text="Sign up or login to get ready for an exciting journey with KTOP FOODS"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="14sp" />
+
+                <!-- Username edittext -->
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@drawable/custom_bg_txt"
+                    android:ems="10"
+                    android:fontFamily="@font/annapurna_sil"
+                    android:hint="Enter your email"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/text_color_secondary"
+                    android:textColorHint="#80B57E35"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp">
+
+                    <!-- Password edittext -->
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/custom_bg_txt"
+                        android:ems="10"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:hint="Enter your password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="16dp"
+                        android:textColor="@color/text_color_secondary"
+                        android:textColorHint="#80B57E35"
+                        android:textSize="16sp" />
+
+                    <!-- Visibility toggle icon -->
+                    <ImageView
+                        android:id="@+id/visibility_off_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/visibility_off" />
+                </FrameLayout>
+
+                <!-- Forgot password link -->
+                <TextView
+                    android:id="@+id/txt_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/lilita_one"
+                    android:text="Forgot password?"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Login button -->
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/custom_bg_default"
+                android:fontFamily="@font/lilita_one"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:backgroundTint="@null" />
+
+            <!-- OR separator -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="1dp"
+                    android:background="@color/color_secondary" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_bg_or"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/txt_or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lilita_one"
+                        android:text="OR"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="1dp"
+                    android:background="@color/color_secondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Facebook login -->
+                <ImageView
+                    android:id="@+id/facebook_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    app:srcCompat="@drawable/logo_fb" />
+
+                <!-- Google login -->
+                <ImageView
+                    android:id="@+id/google_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/logo_google" />
+            </LinearLayout>
+
+            <!-- Signup link -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account? "
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

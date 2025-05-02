@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_food_home"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:elevation="4dp">
+
+    <!-- Food image -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_food"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ImageBorder" />
+
+    <!-- Food name and price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <!-- Food name -->
+        <TextView
+            android:id="@+id/txt_food_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lilita_one"
+            android:gravity="start"
+            android:paddingTop="8dp"
+            android:text="Food Name"
+            android:textColor="@color/text_color_primary"
+            android:textSize="18sp" />
+
+        <!-- Food price -->
+        <TextView
+            android:id="@+id/txt_food_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lilita_one"
+            android:gravity="end"
+            android:text="40.000đ"
+            android:textColor="@color/text_price_food"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Food rating -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Rating text -->
+        <TextView
+            android:id="@+id/txt_food_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lilita_one"
+            android:paddingLeft="8dp"
+            android:text="4.8"
+            android:textColor="@color/text_color_primary"
+            android:textSize="14sp" />
+
+        <!-- Star icon -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="Clock Icon"
+            android:src="@drawable/star_icon" />
+    </LinearLayout>
+
+    <!-- Food preparation time -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <!-- Time text -->
+        <TextView
+            android:id="@+id/txt_food_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/linden_hill"
+            android:text="5 ~ 10min"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp" />
+
+        <!-- Time icon -->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="Clock Icon"
+            android:src="@drawable/time_icon" />
+    </LinearLayout>
+</LinearLayout>

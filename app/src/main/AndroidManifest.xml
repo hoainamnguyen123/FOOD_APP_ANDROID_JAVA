@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ktop_food_app"
+        tools:targetApi="31">
+        <activity
+            android:name=".App.view.activity.TrackOrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.TrackOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.OrderHistoryDetailsActivity"
+            android:enableOnBackInvokedCallback="true"
+
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.OrderHistoryActivity"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.PaymentActivity"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="true"
+            android:label="Thanh toán"
+            android:launchMode="singleTask">
+
+            <!-- Intent-filter cho ZaloPay -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="zaloapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".App.view.activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.FoodDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.FoodListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Ktop_food_app.NoActionBar" />
+        <activity
+            android:name=".App.view.activity.Auth.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.Auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.Auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".App.view.activity.OnboardingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

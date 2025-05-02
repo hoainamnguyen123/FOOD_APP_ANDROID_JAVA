@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#FEF6EA</color>
+    <color name="background_color_secondary">#D7D7D7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="search_color">#F8EBD9</color>
+    <color name="color_primary">#884F04</color>
+    <color name="color_secondary">#B57E35</color>
+    <color name="color_tertiary">#F4E7D6</color>
+    <color name="color_home">#8E4B03</color>
+    <color name="color_cardview_order">#fff6f7</color>
+
+    <color name="text_color_primary">#884F04</color>
+    <color name="text_color_secondary">#B57E35</color>
+    <color name="text_color_default">#CC7800</color>
+    <color name="text_color_tertiary">#878787</color>
+    <color name="text_color_home">#8E4B03</color>
+    <color name="text_price_food">#FF0000</color>
+    <color name="text_color_order">#78420A</color>
+</resources>

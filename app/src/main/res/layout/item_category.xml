@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <!-- Category icon -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_category"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:contentDescription="Category Icon"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/CategoryImageBorder" />
+
+    <!-- Category name -->
+    <TextView
+        android:id="@+id/txt_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/lilita_one"
+        android:maxLines="2"
+        android:text="Category"
+        android:textColor="@color/color_secondary"
+        android:textSize="12sp" />
+</LinearLayout>
